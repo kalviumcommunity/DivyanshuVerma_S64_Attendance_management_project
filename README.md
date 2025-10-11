@@ -27,5 +27,11 @@ This is the first phase of the Attendance Management System project.
 
 ### How to Run
 1. Navigate to the project root directory.
-2. Compile: `javac src/com/school/Student.java src/com/school/Course.java src/com/school/Main.java` (or `javac src/com/school/*.java`)
-3. Run: `java -cp src com.school.Main`
+2. Compile:
+   ```bash
+   javac src/com/school/*.java
+   ```
+3. Run:
+   ```bash
+   java -cp src com.school.Main
+   ```

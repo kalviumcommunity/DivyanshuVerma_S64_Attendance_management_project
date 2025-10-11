@@ -1,12 +1,14 @@
 package com.school;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Course {
-    private static int nextCourseIdCounter = 101;
+    private static final AtomicInteger nextCourseIdCounter = new AtomicInteger(101);
     private int courseId;
     private String courseName;
 
     public Course(String courseName) {
-        this.courseId = nextCourseIdCounter++;
+        this.courseId = nextCourseIdCounter.getAndIncrement();
         this.courseName = courseName;
     }
 
